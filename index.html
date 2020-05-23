@@ -1,244 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bakery</title>
-    <script src="https://kit.fontawesome.com/2e287ee547.js" crossorigin="anonymous"></script>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style/main.css" />
-  </head>
-  <body>
-    <header id="home">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bakery</title>
+  <script src="https://kit.fontawesome.com/2e287ee547.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style/main.css" />
+</head>
+
+<body>
+  <header id="home">
+    <div class="container">
+      <div class="hamburger-menu">
+        <i class="fas fa-bars toggle"></i>
+        <i class="fas fa-times toggle"></i>
+      </div>
+      <nav class="nav d-flex align-items-center justify-content-center justify-content-lg-between">
+        <a class="navbar-brand" href="index.html">
+          <img class="img-fluid" src="img/logo.png" alt="logo" />
+        </a>
+        <ul class="nav-list text-center p-0">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Our team</a></li>
+        </ul>
+      </nav>
+      <div class="hero-text w-100 text-white px-2 px-sm-0">
+        <h1 class="display-4">Welcome</h1>
+        <p class="lead mb-4">Baked goods like you`ve never seen before</p>
+        <a class="btn px-5 mr-2" href="#">Explore</a>
+        <a class="btn px-5 ml-2" href="#">Find a store</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="about" id="about">
       <div class="container">
-        <div class="hamburger-menu">
-          <i class="fas fa-bars toggle"></i>
-          <i class="fas fa-times toggle"></i>
-        </div>
-        <nav class="nav d-flex align-items-center justify-content-center justify-content-lg-between">
-          <a class="navbar-brand" href="index.html">
-            <img class="img-fluid" src="img/logo.png" alt="logo" />
-          </a>
-            <ul class="nav-list text-center p-0">
-              <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
-              <li class="nav-item"><a class="nav-link" href="#team">Our team</a></li>
-            </ul>       
-        </nav>
-        <div class="hero-text w-100 text-white px-2 px-sm-0">
-          <h1 class="display-4">Welcome</h1>
-          <p class="lead mb-4">Baked goods like you`ve never seen before</p>
-          <a class="btn px-5 mr-2" href="#">Explore</a>
-          <a class="btn px-5 ml-2" href="#">Find a store</a>
+        <div class="row align-items-lg-center">
+          <div class="col-12 col-md-6 text-center text-md-left" data-aos="fade-right">
+            <div class="section-heading mb-3">
+              <h4>Discover</h4>
+              <h2 class="display-3">Our Story</h2>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione provident commodi officiis adipisci
+              molestiae
+              doloribus saepe, aspernatur ut incidunt hic.
+            </p>
+            <a class="btn mt-4 mb-5 mb-md-0" href="#">Find out more</a>
+          </div>
+          <div class="col-12 col-md-6" data-aos="fade-left">
+            <img class="img-fluid" src="img/about-img.jpg" alt="about" />
+          </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="about" id="about">
-        <div class="container">
-          <div class="row align-items-lg-center">
-            <div class="col-12 col-md-6 text-center text-md-left" data-aos="fade-right">
-              <div class="section-heading mb-3">
-                <h4>Discover</h4>
-                <h1 class="display-3">Our Story</h1>
-              </div>
+    <section class="menu">
+      <div class="container">
+        <div class="row text-center text-white">
+          <div class="col-12 col-md-4 mb-4 mb-md-0" data-aos="fade-up">
+            <div class="shop-info">
+              <i class="far fa-clock mb-3"></i>
+              <h2 class="mb-4">Hours of operation</h2>
+              <p>Mon to Fri: 8:00am - 6:00pm</p>
+              <p>Sat to Sun: 8:00am - 1:00pm</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4 mb-md-0" data-aos="fade-down">
+            <div class="shop-info">
+              <i class="fas fa-map-marked-alt mb-3"></i>
+              <h2 class="mb-4">Our location</h2>
+              <address>
+                1234 First Avenue <br />
+                New york City, NY 1231
+              </address>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4 mb-md-0" data-aos="fade-up">
+            <div class="shop-info">
+              <i class="fas fa-mobile-alt mb-3"></i>
+              <h2 class="mb-4">Get in touch</h2>
+              <p>Phone#: <a href="tel:800-555-5555">(800) 555-5555</a></p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione provident commodi officiis adipisci molestiae
-                doloribus saepe, aspernatur ut incidunt hic.
+                Email:
+                <a href="mailto:contact@bakery.com">contact@bakery.com</a>
               </p>
-              <a class="btn mt-4 mb-5 mb-md-0" href="#">Find out more</a>
-            </div>
-            <div class="col-12 col-md-6" data-aos="fade-left">
-              <img class="img-fluid" src="img/about-img.jpg" alt="about" />
             </div>
           </div>
         </div>
-      </section>
+        <hr class="mt-5" />
+      </div>
 
-      <section class="menu">
-        <div class="container">
-          <div class="row text-center text-white">
-            <div class="col-12 col-md-4 mb-4 mb-md-0" data-aos="fade-up">
-              <div class="shop-info">
-                <i class="far fa-clock mb-3"></i>
-                <h1 class="mb-4">Hours of operation</h1>
-                <p>Mon to Fri: 8:00am - 6:00pm</p>
-                <p>Sat to Sun: 8:00am - 1:00pm</p>
-              </div>
-            </div>
-            <div class="col-12 col-md-4 mb-4 mb-md-0" data-aos="fade-down">
-              <div class="shop-info">
-                <i class="fas fa-map-marked-alt mb-3"></i>
-                <h1 class="mb-4">Our location</h1>
-                <address>
-                  1234 First Avenue <br />
-                  New york City, NY 1231
-                </address>
-              </div>
-            </div>
-            <div class="col-12 col-md-4 mb-4 mb-md-0" data-aos="fade-up">
-              <div class="shop-info">
-                <i class="fas fa-mobile-alt mb-3"></i>
-                <h1 class="mb-4">Get in touch</h1>
-                <p>Phone#: <a href="tel:800-555-5555">(800) 555-5555</a></p>
-                <p>
-                  Email:
-                  <a href="mailto:contact@bakery.com">contact@bakery.com</a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <hr class="mt-5" />
+      <div class="container-fluid p-0" id="menu">
+        <div class="section-heading my-5 text-center">
+          <h4 class="text-white">Our Tasty Food</h4>
+          <h2 class="display-4">The Menu</h2>
         </div>
 
-        <div class="container-fluid p-0" id="menu">
-          <div class="section-heading my-5 text-center">
-            <h4 class="text-white">Our Tasty Food</h4>
-            <h1 class="display-4">The Menu</h1>
+        <div class="row no-gutters">
+          <!-- Column-1 -->
+          <div class="col-12 col-sm-6 col-xl-2 order-sm-1 order-xl-1" data-aos="fade-up">
+            <img class="img-fluid" src="img/menu-item-1.jpg" alt="menu" />
           </div>
-
-          <div class="row no-gutters">
-            <!-- Column-1 -->
-            <div class="col-12 col-sm-6 col-xl-2 order-sm-1 order-xl-1" data-aos="fade-up">
-              <img class="img-fluid" src="img/menu-item-1.jpg" alt="menu" />
-            </div>
-            <div class="col-12 col-sm-6 col-xl-2 order-sm-2 order-xl-2 point-left" data-aos="fade-in">
-              <div class="menu-item-desc">
-                <h6>$10</h6>
-                <h1>The Cake</h1>
-                <p>This cake is amazing! I recommend it to everyoune.</p>
-                <a href="" class="btn mt-3 d-none d-xl-block"> Learn more</a>
-              </div>
-            </div>
-            <!-- Column-2 -->
-            <div class="col-12 col-sm-6 col-xl-2 order-sm-4 order-xl-3" data-aos="fade-up">
-              <img class="img-fluid" src="img/menu-item-2.jpg" alt="menu" />
-            </div>
-            <div class="col-12 col-sm-6 col-xl-2 order-sm-3 order-xl-4 point-left" data-aos="fade-in">
-              <div class="menu-item-desc">
-                <h6>$10</h6>
-                <h1>The Cake</h1>
-                <p>This cake is amazing! I recommend it to everyoune.</p>
-                <a href="" class="btn mt-3 d-none d-xl-block"> Learn more</a>
-              </div>
-            </div>
-            <!-- Column-3 -->
-            <div class="col-12 col-sm-6 col-xl-2 order-sm-5 order-xl-5" data-aos="fade-up">
-              <img class="img-fluid" src="img/menu-item-3.jpg" alt="menu" />
-            </div>
-            <div class="col-12 col-sm-6 col-xl-2 order-sm-6 order-xl-6 point-left" data-aos="fade-in">
-              <div class="menu-item-desc">
-                <h6>$10</h6>
-                <h1>The Cake</h1>
-                <p>This cake is amazing! I recommend it to everyoune.</p>
-                <a href="" class="btn mt-3 d-none d-xl-block"> Learn more</a>
-              </div>
+          <div class="col-12 col-sm-6 col-xl-2 order-sm-2 order-xl-2 point-left" data-aos="fade-in">
+            <div class="menu-item-desc">
+              <h6>$10</h6>
+              <h2>The Cake</h2>
+              <p>This cake is amazing! I recommend it to everyoune.</p>
+              <a href="" class="btn mt-3 d-none d-xl-block"> Learn more</a>
             </div>
           </div>
-          <!-- Column-4 -->
-          <div class="row no-gutters">
-            <div class="col-12 col-sm-6 col-xl-2 order-sm-2 order-xl-2" data-aos="fade-up">
-              <img class="img-fluid" src="img/menu-item-4.jpg" alt="menu" />
+          <!-- Column-2 -->
+          <div class="col-12 col-sm-6 col-xl-2 order-sm-4 order-xl-3" data-aos="fade-up">
+            <img class="img-fluid" src="img/menu-item-2.jpg" alt="menu" />
+          </div>
+          <div class="col-12 col-sm-6 col-xl-2 order-sm-3 order-xl-4 point-left" data-aos="fade-in">
+            <div class="menu-item-desc">
+              <h6>$10</h6>
+              <h2>The Cake</h2>
+              <p>This cake is amazing! I recommend it to everyoune.</p>
+              <a href="" class="btn mt-3 d-none d-xl-block"> Learn more</a>
             </div>
-            <div class="col-12 col-sm-6 col-xl-2 order-sm-1 order-xl-1 point-right" data-aos="fade-in">
-              <div class="menu-item-desc">
-                <h6>$10</h6>
-                <h1>The Cake</h1>
-                <p>This cake is amazing! I recommend it to everyoune.</p>
-                <a href="" class="btn mt-3 d-none d-xl-block"> Learn more</a>
-              </div>
-            </div>
-
-            <!-- Column-5 -->
-            <div class="col-12 col-sm-6 col-xl-2 order-sm-3 order-xl-4" data-aos="fade-up">
-              <img class="img-fluid" src="img/menu-item-5.jpg" alt="menu" />
-            </div>
-            <div class="col-12 col-sm-6 col-xl-2 order-sm-5 order-xl-3 point-right" data-aos="fade-in">
-              <div class="menu-item-desc">
-                <h6>$10</h6>
-                <h1>The Cake</h1>
-                <p>This cake is amazing! I recommend it to everyoune.</p>
-                <a href="" class="btn mt-3 d-none d-xl-block"> Learn more</a>
-              </div>
-            </div>
-            <!-- Column-6 -->
-            <div class="col-12 col-sm-6 col-xl-2 order-sm-6 order-xl-6" data-aos="fade-up">
-              <img class="img-fluid" src="img/menu-item-6.jpg" alt="menu" />
-            </div>
-            <div class="col-12 col-sm-6 col-xl-2 order-sm-5 order-xl-5 point-right" data-aos="fade-in">
-              <div class="menu-item-desc">
-                <h6>$10</h6>
-                <h1>The Cake</h1>
-                <p>This cake is amazing! I recommend it to everyoune.</p>
-                <a href="" class="btn mt-3 d-none d-xl-block"> Learn more</a>
-              </div>
+          </div>
+          <!-- Column-3 -->
+          <div class="col-12 col-sm-6 col-xl-2 order-sm-5 order-xl-5" data-aos="fade-up">
+            <img class="img-fluid" src="img/menu-item-3.jpg" alt="menu" />
+          </div>
+          <div class="col-12 col-sm-6 col-xl-2 order-sm-6 order-xl-6 point-left" data-aos="fade-in">
+            <div class="menu-item-desc">
+              <h6>$10</h6>
+              <h2>The Cake</h2>
+              <p>This cake is amazing! I recommend it to everyoune.</p>
+              <a href="" class="btn mt-3 d-none d-xl-block"> Learn more</a>
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="team" id="team">
-        <div class="container">
-          <div class="section-heading my-5 text-center">
-            <h4>Meet</h4>
-            <h1 class="display-4">Our Chefs</h1>
+        <!-- Column-4 -->
+        <div class="row no-gutters">
+          <div class="col-12 col-sm-6 col-xl-2 order-sm-2 order-xl-2" data-aos="fade-up">
+            <img class="img-fluid" src="img/menu-item-4.jpg" alt="menu" />
           </div>
-          <div class="row">
-            <div class="col-12 col-md-4" data-aos="fade-right">
-              <img class="img-fluid" src="img/chef-1.png" alt="team" />
-              <div class="card-body">
-                <h1>Olivian Logan</h1>
-                <h6>Cupcake Specialist</h6>
-                <p>Olivia is na awesome pastry chef!</p>
-              </div>
+          <div class="col-12 col-sm-6 col-xl-2 order-sm-1 order-xl-1 point-right" data-aos="fade-in">
+            <div class="menu-item-desc">
+              <h6>$10</h6>
+              <h2>The Cake</h2>
+              <p>This cake is amazing! I recommend it to everyoune.</p>
+              <a href="" class="btn mt-3 d-none d-xl-block"> Learn more</a>
             </div>
+          </div>
 
-            <div class="col-12 col-md-4" data-aos="fade-up">
-              <img class="img-fluid" src="img/chef-2.png" alt="team" />
-              <div class="card-body">
-                <h1>Jessica Lewis</h1>
-                <h6>Master Baker</h6>
-                <p>Jessica is na awesome pastry chef!</p>
-              </div>
+          <!-- Column-5 -->
+          <div class="col-12 col-sm-6 col-xl-2 order-sm-3 order-xl-4" data-aos="fade-up">
+            <img class="img-fluid" src="img/menu-item-5.jpg" alt="menu" />
+          </div>
+          <div class="col-12 col-sm-6 col-xl-2 order-sm-5 order-xl-3 point-right" data-aos="fade-in">
+            <div class="menu-item-desc">
+              <h6>$10</h6>
+              <h2>The Cake</h2>
+              <p>This cake is amazing! I recommend it to everyoune.</p>
+              <a href="" class="btn mt-3 d-none d-xl-block"> Learn more</a>
             </div>
-
-            <div class="col-12 col-md-4" data-aos="fade-left">
-              <img class="img-fluid" src="img/chef-3.png" alt="team" />
-              <div class="card-body">
-                <h1>James Holt</h1>
-                <h6>Cake Specialist</h6>
-                <p>James is na awesome pastry chef!</p>
-              </div>
+          </div>
+          <!-- Column-6 -->
+          <div class="col-12 col-sm-6 col-xl-2 order-sm-6 order-xl-6" data-aos="fade-up">
+            <img class="img-fluid" src="img/menu-item-6.jpg" alt="menu" />
+          </div>
+          <div class="col-12 col-sm-6 col-xl-2 order-sm-5 order-xl-5 point-right" data-aos="fade-in">
+            <div class="menu-item-desc">
+              <h6>$10</h6>
+              <h2>The Cake</h2>
+              <p>This cake is amazing! I recommend it to everyoune.</p>
+              <a href="" class="btn mt-3 d-none d-xl-block"> Learn more</a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <footer class="text-center py-5">
-        &copy; Bakery 2019
-      </footer>
-    </main>
+    <section class="team" id="team">
+      <div class="container">
+        <div class="section-heading my-5 text-center">
+          <h4>Meet</h4>
+          <h2 class="display-4">Our Chefs</h2>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-4" data-aos="fade-right">
+            <img class="img-fluid" src="img/chef-1.png" alt="team" />
+            <div class="card-body">
+              <h2>Olivian Logan</h2>
+              <h6>Cupcake Specialist</h6>
+              <p>Olivia is na awesome pastry chef!</p>
+            </div>
+          </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="script/main.js"></script>
-  </body>
+          <div class="col-12 col-md-4" data-aos="fade-up">
+            <img class="img-fluid" src="img/chef-2.png" alt="team" />
+            <div class="card-body">
+              <h2>Jessica Lewis</h2>
+              <h6>Master Baker</h6>
+              <p>Jessica is na awesome pastry chef!</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4" data-aos="fade-left">
+            <img class="img-fluid" src="img/chef-3.png" alt="team" />
+            <div class="card-body">
+              <h2>James Holt</h2>
+              <h6>Cake Specialist</h6>
+              <p>James is na awesome pastry chef!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center py-5">
+      &copy; Bakery 2019
+    </footer>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script/main.js"></script>
+</body>
+
 </html>
