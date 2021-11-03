@@ -1,25 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Teko:300,400&display=swap");
-
 *,
-*:before,
-*:after {
+:after,
+:before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* html {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  color: #fff;
-  scroll-behavior: smooth;
-} */
-
-/* body {
-  line-height: 24px;
-} */
-
 h1,
 h2,
 h3,
@@ -28,30 +15,24 @@ h5,
 h6 {
   margin: 0;
 }
-
 h6 {
-  font-family: "Lobster", cursive;
+  font-family: Lobster, cursive;
 }
-
 a {
   color: #fff !important;
   text-decoration: none;
 }
-
-ul,
-li {
+li,
+ul {
   list-style-type: none;
 }
-
 p {
   margin: 0 0 10px;
 }
-
 section {
   padding: 60px 0;
   overflow: hidden;
 }
-
 .container {
   width: 90%;
   max-width: 120rem;
@@ -59,24 +40,19 @@ section {
   margin: 0 auto;
   position: relative;
 }
-
-/* Header  */
-
 header {
   width: 100%;
   height: 100vh;
   background: linear-gradient(rgba(16, 29, 44, 0.95), rgba(16, 29, 44, 0.95)),
-    url("../img/header-bg.jpg") center no-repeat;
+    url(../img/header-bg.jpg) 50% no-repeat;
   background-size: cover;
   position: relative;
 }
-
 header > .container {
   position: relative;
   height: 100%;
   padding: 0;
 }
-
 .navbar-brand {
   position: absolute;
   width: 100%;
@@ -84,44 +60,38 @@ header > .container {
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  transition: opacity 650ms;
+  transition: opacity 0.65s;
 }
-
 .navbar-brand:hover {
   opacity: 0.8;
 }
-
 .hamburger-menu {
   position: fixed;
   top: 25px;
   right: 15px;
   width: 50px;
   height: 50px;
+  display: -ms-flexbox;
   display: flex;
   background-color: #101d2c;
   border-radius: 4px;
   cursor: pointer;
   z-index: 999;
 }
-
 .hamburger-menu i {
   font-size: 30px;
   color: rgba(198, 153, 99, 0.7);
   margin: auto;
 }
-
 .hamburger-menu .fa-times {
   display: none;
 }
-
 .hamburger-menu .fa-times.open {
   display: block;
 }
-
 .hamburger-menu .fa-bars.open {
   display: none;
 }
-
 .nav-list {
   position: fixed;
   top: 0;
@@ -130,23 +100,23 @@ header > .container {
   height: 100vh;
   background-color: #101d2c;
   z-index: 900;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: center;
   justify-content: center;
   opacity: 0;
   transform: scale(0);
-  transition: opacity 650ms;
+  transition: opacity 0.65s;
 }
-
 .nav-list.open {
   opacity: 1;
   transform: scale(1);
 }
-
 .lead {
   line-height: 2.5;
 }
-
 .hero-text {
   position: absolute;
   top: 45%;
@@ -154,16 +124,13 @@ header > .container {
   transform: translate(-50%, -45%);
   text-align: center;
 }
-
 .hero-text h1 {
-  font-family: "Lobster", cursive;
+  font-family: Lobster, cursive;
   color: #c69963;
 }
-
 .hero-text p {
-  font-weight: normal;
+  font-weight: 400;
 }
-
 .btn {
   width: 100px;
   padding: 5px 0 !important;
@@ -171,8 +138,7 @@ header > .container {
   position: relative;
   overflow: hidden;
 }
-
-.btn::before {
+.btn:before {
   content: "";
   position: absolute;
   top: 0;
@@ -182,85 +148,66 @@ header > .container {
   background: linear-gradient(
     120deg,
     transparent,
-    rgba(255, 255, 255, 0.3),
+    hsla(0, 0%, 100%, 0.3),
     transparent
   );
-  transition: all 650ms;
+  transition: all 0.65s;
 }
-
-.btn:hover::before {
+.btn:hover:before {
   left: 100%;
 }
-
-/* About */
-
 .section-heading {
   text-transform: uppercase;
   color: #101d2c;
   line-height: 0;
-  font-family: "Teko", sans-serif;
+  font-family: Teko, sans-serif;
   font-weight: 900;
   letter-spacing: 1px;
 }
-
 .section-heading h2 {
   text-transform: none;
-}
-
-.section-heading h2 {
-  font-family: "Lobster", cursive;
+  font-family: Lobster, cursive;
   font-style: normal;
   color: #c69963;
 }
-
 .about .btn {
   width: 150px;
   color: #c69963 !important;
-  transition: background-color 650ms;
+  transition: background-color 0.65s;
 }
-
 .about .btn:hover {
   color: #fff !important;
   background-color: #c69963;
 }
-
-/* Menu */
-
 .menu {
   background-color: #101d2c;
 }
-
 .shop-info i {
   color: #c69963;
   font-size: 50px;
 }
-
 .shop-info h2 {
-  font-family: "Teko", sans-serif;
+  font-family: Teko, sans-serif;
   font-size: 25px;
   font-weight: 300;
   text-transform: uppercase;
 }
-
 .shop-info a,
-.shop-info p,
-.shop-info address {
-  color: rgba(255, 255, 255, 0.5) !important;
+.shop-info address,
+.shop-info p {
+  color: hsla(0, 0%, 100%, 0.5) !important;
 }
-
 hr {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid hsla(0, 0%, 100%, 0.2);
 }
-
-.point-right,
-.point-left {
+.point-left,
+.point-right {
   position: relative;
   background-color: #fff;
+  display: -ms-flexbox;
   display: flex;
 }
-
-.point-left::before,
-.point-left::before {
+.point-left:before {
   content: "";
   position: absolute;
   width: 25px;
@@ -271,117 +218,94 @@ hr {
   transform: translateX(-50%) rotate(45deg);
   z-index: 1;
 }
-
 .menu-item-desc {
   padding: 50px 10px;
   color: #212529;
   margin: auto;
 }
-
 .menu-item-desc h6 {
   color: #c69963;
   font-size: 25px;
 }
-
 .menu-item-desc h2 {
   color: #101d2c;
   font-size: 16px;
   letter-spacing: 1px;
-  /* font-family: "Teko", sans-serif; */
   font-weight: 400;
 }
-
 .card-body h2 {
   font-size: 25px;
   letter-spacing: 1px;
-  font-family: "Teko", sans-serif;
+  font-family: Teko, sans-serif;
   font-weight: 300;
 }
-
 .card-body h6 {
   font-size: 16px;
   color: #c69963;
 }
-
 footer {
   background-color: #101d2c;
-  color: rgba(255, 255, 255, 0.5);
+  color: hsla(0, 0%, 100%, 0.5);
 }
-
-/* Media */
-
 @media (min-width: 500px) {
   .navbar-brand {
     max-width: 150px;
   }
-
   .hamburger-menu {
     top: 35px;
     right: 25px;
   }
-
-  .point-right::before,
-  .point-left::before {
+  .point-left:before,
+  .point-right:before {
     display: none;
   }
-
   .menu-item-desc {
     padding: 50px 20px;
   }
 }
-
 @media (min-width: 768px) {
   .btn {
     width: 150px;
   }
-
-  .point-right::before,
-  .point-left::before {
+  .point-left:before,
+  .point-right:before {
     display: block;
   }
 }
-
 @media (min-width: 992px) {
   header > .container {
     padding: 0 15px;
   }
-
   .hamburger-menu {
     display: none;
   }
-
+  .nav-list,
   .navbar-brand {
-    position: initial;
-    transform: initial;
+    position: static;
+    transform: none;
   }
-
   .nav-list {
-    position: initial;
-    width: initial;
-    height: initial;
+    width: auto;
+    height: auto;
     background-color: initial;
+    -ms-flex-direction: row;
     flex-direction: row;
-    opacity: initial;
-    transform: initial;
+    opacity: 1;
     transition: initial;
     margin: 0;
     padding: 0;
   }
-
   .nav-item {
     margin: 0 30px;
   }
-
   .nav-item:last-child {
     margin-right: 0;
   }
-
   .nav-link {
     position: relative;
     padding: 0;
   }
-
-  .nav-link::before {
+  .nav-link:before {
     content: "";
     position: absolute;
     left: 0;
@@ -391,71 +315,58 @@ footer {
     height: 2px;
     transform: scaleX(0);
     transform-origin: center;
-    transition: transform 650ms;
+    transition: transform 0.65s;
   }
-
-  .nav-link:hover::before {
+  .nav-link:hover:before {
     transform: scaleX(1);
   }
 }
-
 @media (min-width: 1200px) {
-  .point-right::before,
-  .point-left::before {
+  .point-left:before,
+  .point-right:before {
     display: block;
     top: 50%;
-    left: initial;
-    transform: translate(0, -50%) rotate(45deg);
+    left: auto;
+    transform: translateY(-50%) rotate(45deg);
   }
-
-  .point-left::before {
+  .point-left:before {
     left: -12px;
   }
-
-  .point-right::before {
+  .point-right:before {
     right: -12px;
   }
-
   .menu-item-desc p {
     display: none;
   }
-
   .menu-item-desc .btn {
     color: #fff !important;
     background-color: #c69963;
   }
 }
-
 @media (max-width: 991px) {
   .display-3 {
     font-size: 2rem;
   }
-
   .lead {
     font-size: 1rem;
     line-height: 2;
   }
 }
-
 @media (max-width: 380px) {
   .display-3 {
     font-size: 2rem;
   }
-
   .lead {
     line-height: 1.5;
   }
 }
-
 @media (max-height: 380px), screen and (orientation: landscape) {
   .display-3 {
     font-size: 2rem;
   }
-
   .lead {
     line-height: 1.4;
   }
-
   .hero-text {
     margin-top: 100px;
   }
