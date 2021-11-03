@@ -52,12 +52,13 @@ section {
   overflow: hidden;
 }
 
-/* .container {
+.container {
   width: 90%;
   max-width: 120rem;
   height: 100%;
   margin: 0 auto;
-  /* position: relative; */
+  position: relative;
+}
 
 /* Header  */
 
@@ -74,6 +75,11 @@ header > .container {
   position: relative;
   height: 100%;
   padding: 0;
+}
+
+.lead {
+  /* color: #f9ecb3; */
+  font-weight: 700;
 }
 
 .navbar-brand {
@@ -155,6 +161,11 @@ header > .container {
   color: #c69963;
 }
 
+.hero-text p {
+  font-size: 25px;
+  font-weight: normal;
+}
+
 .btn {
   width: 100px;
   padding: 5px 0 !important;
@@ -186,16 +197,21 @@ header > .container {
 /* About */
 
 .section-heading {
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   color: #101d2c;
   line-height: 0;
   font-family: "Teko", sans-serif;
-  font-weight: 300;
+  font-weight: 900;
   letter-spacing: 1px;
+}
+
+.section-heading h2{
+  text-transform: none;
 }
 
 .section-heading h2 {
   font-family: "Lobster", cursive;
+  font-style: normal;
   color: #c69963;
 }
 
@@ -262,19 +278,21 @@ hr {
   padding: 50px 10px;
   color: #212529;
   margin: auto;
+  
 }
 
 .menu-item-desc h6 {
-  color: #c69963;
-  font-size: 20px;
+  color: #c69963; 
+  font-size: 25px; 
 }
+
 
 .menu-item-desc h2 {
   color: #101d2c;
-  font-size: 30px;
+  font-size: 16px;
   letter-spacing: 1px;
-  font-family: "Teko", sans-serif;
-  font-weight: 300;
+  /* font-family: "Teko", sans-serif; */
+  font-weight: 400;
 }
 
 .card-body h2 {
