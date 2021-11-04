@@ -71,6 +71,15 @@ header {
   position: relative;
 }
 
+.information {
+  width: 100%;
+  /* height: 100vh; */
+  background: linear-gradient(rgba(16, 29, 44, 0.95), rgba(16, 29, 44, 0.95)),
+    url("../img/header-bg.jpg")  right no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 header > .container {
   position: relative;
   height: 100%;
@@ -164,7 +173,7 @@ header > .container {
   font-weight: normal;
 }
 
-.btn {
+/* .btn {
   width: 100px;
   padding: 5px 0 !important;
   border: 1px solid #c69963;
@@ -190,7 +199,7 @@ header > .container {
 
 .btn:hover::before {
   left: 100%;
-}
+} */
 
 /* About */
 
@@ -211,17 +220,6 @@ header > .container {
   font-family: "Lobster", cursive;
   font-style: normal;
   color: #c69963;
-}
-
-.about .btn {
-  width: 150px;
-  color: #c69963 !important;
-  transition: background-color 650ms;
-}
-
-.about .btn:hover {
-  color: #fff !important;
-  background-color: #c69963;
 }
 
 /* Menu */

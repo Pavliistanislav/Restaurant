@@ -12,7 +12,7 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="style/main.min.css" />
-  
+
 </head>
 
 <body>
@@ -41,7 +41,7 @@
           Ми відомі своїми стравами, від яких у захваті
           як місцеві мешканці, так і закордонні туристи<br>
 
-          У нас безпечно. Ми вакциновані від covid-19 на 100%
+          У нас безпечно. Ми вакциновані від covid-19 на 100%<br>
           Швидка доставка гарячих страв додому або у офіс
         </p>
         <!-- <a class="btn px-5 mr-2" href="#">Explore</a>
@@ -51,6 +51,41 @@
   </header>
 
   <main>
+
+    <section class="information" id="information">
+      <div class="container">
+        <div class="row text-center text-white">
+          <div class="col-12 col-md-4 mb-4 mb-md-0" data-aos="fade-up">
+            <div class="shop-info">
+              <i class="far fa-clock mb-3"></i>
+              <h2 class="mb-4">Години роботи</h2>
+              <p> 10:00 - 24:00</p>
+              <!-- <p>Sat to Sun: 8:00am - 1:00pm</p> -->
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4 mb-md-0" data-aos="fade-down">
+            <div class="shop-info">
+              <i class="fas fa-map-marked-alt mb-3"></i>
+              <h2 class="mb-4">Місце розташування</h2>
+              <address>
+                м. Бориспіль
+                <br />
+                вул. Київський шлях 76а
+              </address>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4 mb-md-0" data-aos="fade-up">
+            <div class="shop-info">
+              <i class="fas fa-mobile-alt mb-3"></i>
+              <h2 class="mb-4">Контакти</h2>
+              <p>Телефон: <a href="tel:050-818-84-92">(050) 818-84-92</a></p>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-5" />
+      </div>
+    </section>
+
     <section class="about" id="about">
       <div class="container">
         <div class="row align-items-lg-center">
@@ -90,7 +125,6 @@
               моменти твого життя і <strong>чекаємо тебе у гості!</strong>
 
             </p>
-            <!-- <a class="btn mt-4 mb-5 mb-md-0" href="#">Find out more</a> -->
           </div>
           <div class="col-12 col-md-6" data-aos="fade-left">
             <img class="img-fluid" src="img/about-img.jpg" alt="about" />
@@ -100,41 +134,7 @@
     </section>
 
     <section class="menu">
-      <div class="container">
-        <div class="row text-center text-white">
-          <div class="col-12 col-md-4 mb-4 mb-md-0" data-aos="fade-up">
-            <div class="shop-info">
-              <i class="far fa-clock mb-3"></i>
-              <h2 class="mb-4">Години роботи</h2>
-              <p> 10:00 - 24:00</p>
-              <!-- <p>Sat to Sun: 8:00am - 1:00pm</p> -->
-            </div>
-          </div>
-          <div class="col-12 col-md-4 mb-4 mb-md-0" data-aos="fade-down">
-            <div class="shop-info">
-              <i class="fas fa-map-marked-alt mb-3"></i>
-              <h2 class="mb-4">Місце розташування</h2>
-              <address>
-                м. Бориспіль
-                <br />
-                вул. Київський шлях 76а
-              </address>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 mb-4 mb-md-0" data-aos="fade-up">
-            <div class="shop-info">
-              <i class="fas fa-mobile-alt mb-3"></i>
-              <h2 class="mb-4">Контакти</h2>
-              <p>Телефон: <a href="tel:050-818-84-92">(050) 818-84-92</a></p>
-              <!-- <p>
-                Email:
-                <a href="mailto:contact@bakery.com">contact@bakery.com</a>
-              </p> -->
-            </div>
-          </div>
-        </div>
-        <hr class="mt-5" />
-      </div>
+
 
       <div class="container-fluid p-0" id="menu">
         <div class="section-heading my-5 text-center">
@@ -145,7 +145,21 @@
         <div class="row no-gutters">
           <!-- Column-1 -->
           <div class="col-12 col-sm-6 col-xl-2 order-sm-1 order-xl-1" data-aos="fade-up">
-            <img class="img-fluid" src="img/menu-item-1.jpg" alt="menu" />
+
+            <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="2000">
+                  <img class="img-fluid" src="img/menu-item-1.jpg" alt="menu" />
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="img/menu-item-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="img/menu-item-3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+
           </div>
           <div class="col-12 col-sm-6 col-xl-2 order-sm-2 order-xl-2 point-left" data-aos="fade-in">
             <div class="menu-item-desc">
@@ -158,8 +172,21 @@
           </div>
           <!-- Column-2 -->
           <div class="col-12 col-sm-6 col-xl-2 order-sm-4 order-xl-3" data-aos="fade-up">
-            <img class="img-fluid" src="img/menu-item-2.jpg" alt="menu" />
+            <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="2000">
+                  <img class="img-fluid" src="img/banquet-item-1.jpg" alt="menu" />
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="img/banquet-item-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="img/banquet-item-3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
           </div>
+
           <div class="col-12 col-sm-6 col-xl-2 order-sm-3 order-xl-4 point-left" data-aos="fade-in">
             <div class="menu-item-desc">
               <h6>Банкет</h6>
@@ -178,8 +205,19 @@
           </div>
           <!-- Column-3 -->
           <div class="col-12 col-sm-6 col-xl-2 order-sm-5 order-xl-5" data-aos="fade-up">
-            <img class="img-fluid" src="img/menu-item-3.jpg" alt="menu" />
+            <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="2000">
+                  <img class="img-fluid" src="img/delivery-item-1.jpg" alt="menu" />
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="img/delivery-item-2.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
           </div>
+
+
           <div class="col-12 col-sm-6 col-xl-2 order-sm-6 order-xl-6 point-left" data-aos="fade-in">
             <div class="menu-item-desc">
               <h6>Доставка</h6>
@@ -192,7 +230,19 @@
         <!-- Column-4 -->
         <div class="row no-gutters">
           <div class="col-12 col-sm-6 col-xl-2 order-sm-2 order-xl-2" data-aos="fade-up">
-            <img class="img-fluid" src="img/menu-item-4.jpg" alt="menu" />
+            <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="2000">
+                  <img class="img-fluid" src="img/banquet-hall-1.jpg" alt="menu" />
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="img/banquet-hall-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="img/banquet-hall-3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-12 col-sm-6 col-xl-2 order-sm-1 order-xl-1 point-right" data-aos="fade-in">
             <div class="menu-item-desc">
@@ -205,7 +255,7 @@
 
           <!-- Column-5 -->
           <div class="col-12 col-sm-6 col-xl-2 order-sm-3 order-xl-4" data-aos="fade-up">
-            <img class="img-fluid" src="img/menu-item-5.jpg" alt="menu" />
+            <img class="img-fluid" src="img/lunch.jpg" alt="menu" />
           </div>
           <div class="col-12 col-sm-6 col-xl-2 order-sm-5 order-xl-3 point-right" data-aos="fade-in">
             <div class="menu-item-desc">
@@ -220,7 +270,21 @@
           </div>
           <!-- Column-6 -->
           <div class="col-12 col-sm-6 col-xl-2 order-sm-6 order-xl-6" data-aos="fade-up">
-            <img class="img-fluid" src="img/menu-item-6.jpg" alt="menu" />
+
+            <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="2000">
+                  <img class="img-fluid" src="img/teams-1.jpg" alt="menu" />
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="img/teams-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="img/teams-3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+
           </div>
           <div class="col-12 col-sm-6 col-xl-2 order-sm-5 order-xl-5 point-right" data-aos="fade-in">
             <div class="menu-item-desc">
@@ -233,43 +297,6 @@
         </div>
       </div>
     </section>
-
-    <!-- <section class="team" id="team">
-      <div class="container">
-        <div class="section-heading my-5 text-center">
-          <h4>Meet</h4>
-          <h2 class="display-4">Our Chefs</h2>
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-4" data-aos="fade-right">
-            <img class="img-fluid" src="img/chef-1.png" alt="team" />
-            <div class="card-body">
-              <h2>Olivian Logan</h2>
-              <h6>Cupcake Specialist</h6>
-              <p>Olivia is na awesome pastry chef!</p>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-4" data-aos="fade-up">
-            <img class="img-fluid" src="img/chef-2.png" alt="team" />
-            <div class="card-body">
-              <h2>Jessica Lewis</h2>
-              <h6>Master Baker</h6>
-              <p>Jessica is na awesome pastry chef!</p>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-4" data-aos="fade-left">
-            <img class="img-fluid" src="img/chef-3.png" alt="team" />
-            <div class="card-body">
-              <h2>James Holt</h2>
-              <h6>Cake Specialist</h6>
-              <p>James is na awesome pastry chef!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <footer class="text-center py-5">
       &copy; Lira 2021
