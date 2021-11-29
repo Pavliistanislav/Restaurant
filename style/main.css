@@ -281,7 +281,7 @@ hr {
 .menu-item-desc {
   padding: 50px 10px;
   color: #212529;
-  margin: auto;
+  margin: auto 0;
 }
 
 .menu-item-desc h6 {
@@ -408,10 +408,6 @@ footer {
 
   .point-right::before {
     right: -12px;
-  }
-
-  .menu-item-desc p {
-    display: none;
   }
 }
 
