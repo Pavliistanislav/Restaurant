@@ -68,7 +68,7 @@ img {
 .btn {
   color: #fff !important;
   background-color: #c69963;
-  width: 200px;
+  width: 225x;
   border: 1px solid #c69963;
   position: relative;
   overflow: hidden;
@@ -335,13 +335,6 @@ footer {
   }
 }
 
-@media (min-width: 768px) {
-  .point-right::before,
-  .point-left::before {
-    display: block;
-  }
-}
-
 @media (min-width: 992px) {
   header > .container {
     padding: 0 15px;
@@ -423,10 +416,6 @@ footer {
 }
 
 @media (max-width: 991px) {
-  .btn {
-    width: 200px;
-  }
-
   .display-3 {
     font-size: 4rem;
   }
